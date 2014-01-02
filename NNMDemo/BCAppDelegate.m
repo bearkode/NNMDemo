@@ -8,6 +8,7 @@
  */
 
 #import "BCAppDelegate.h"
+#import "BCConnectManager.h"
 
 
 @implementation BCAppDelegate
@@ -27,6 +28,9 @@
     mWindow = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     [mWindow setBackgroundColor:[UIColor whiteColor]];
     [mWindow makeKeyAndVisible];
+    
+    [[BCConnectManager sharedManager] startAdvertising];
+    [[BCConnectManager sharedManager] startBrowsing];
     
     return YES;
 }

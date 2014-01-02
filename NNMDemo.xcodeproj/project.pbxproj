@@ -19,6 +19,8 @@
 		2ED513161875627C009A2C7E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ED512FE1875627C009A2C7E /* UIKit.framework */; };
 		2ED5131E1875627C009A2C7E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2ED5131C1875627C009A2C7E /* InfoPlist.strings */; };
 		2ED513201875627C009A2C7E /* NNMDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ED5131F1875627C009A2C7E /* NNMDemoTests.m */; };
+		2ED5132A18756545009A2C7E /* MultipeerConnectivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ED5132918756545009A2C7E /* MultipeerConnectivity.framework */; };
+		2ED5132D187565A5009A2C7E /* BCConnectManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ED5132C187565A5009A2C7E /* BCConnectManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,10 @@
 		2ED5131B1875627C009A2C7E /* NNMDemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NNMDemoTests-Info.plist"; sourceTree = "<group>"; };
 		2ED5131D1875627C009A2C7E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2ED5131F1875627C009A2C7E /* NNMDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NNMDemoTests.m; sourceTree = "<group>"; };
+		2ED5132918756545009A2C7E /* MultipeerConnectivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MultipeerConnectivity.framework; path = System/Library/Frameworks/MultipeerConnectivity.framework; sourceTree = SDKROOT; };
+		2ED5132B187565A5009A2C7E /* BCConnectManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCConnectManager.h; sourceTree = "<group>"; };
+		2ED5132C187565A5009A2C7E /* BCConnectManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCConnectManager.m; sourceTree = "<group>"; };
+		2ED5132E1875662B009A2C7E /* BCObjCUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCObjCUtil.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2ED5132A18756545009A2C7E /* MultipeerConnectivity.framework in Frameworks */,
 				2ED512FD1875627C009A2C7E /* CoreGraphics.framework in Frameworks */,
 				2ED512FF1875627C009A2C7E /* UIKit.framework in Frameworks */,
 				2ED512FB1875627C009A2C7E /* Foundation.framework in Frameworks */,
@@ -96,6 +103,7 @@
 		2ED512F91875627C009A2C7E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2ED5132918756545009A2C7E /* MultipeerConnectivity.framework */,
 				2ED512FA1875627C009A2C7E /* Foundation.framework */,
 				2ED512FC1875627C009A2C7E /* CoreGraphics.framework */,
 				2ED512FE1875627C009A2C7E /* UIKit.framework */,
@@ -107,6 +115,9 @@
 		2ED513001875627C009A2C7E /* NNMDemo */ = {
 			isa = PBXGroup;
 			children = (
+				2ED5132E1875662B009A2C7E /* BCObjCUtil.h */,
+				2ED5132B187565A5009A2C7E /* BCConnectManager.h */,
+				2ED5132C187565A5009A2C7E /* BCConnectManager.m */,
 				2ED513091875627C009A2C7E /* BCAppDelegate.h */,
 				2ED5130A1875627C009A2C7E /* BCAppDelegate.m */,
 				2ED5130C1875627C009A2C7E /* Images.xcassets */,
@@ -241,6 +252,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2ED513071875627C009A2C7E /* main.m in Sources */,
+				2ED5132D187565A5009A2C7E /* BCConnectManager.m in Sources */,
 				2ED5130B1875627C009A2C7E /* BCAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
